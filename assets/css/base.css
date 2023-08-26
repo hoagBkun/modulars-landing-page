@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #2e80ce;
+    --header-bg: #10375c;
+    --text-color-black-gray: #575d5e;
+    --primary-color-black: #152427;
+    --primary-color-black-green: #143c3c;
+    --secondary-color-light-green: #e2eddf;
+    --text-color-light-gray: #7D8188;
+    --text-color-white: #fff;
+}
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+.btn {
+    --height: 57px;
+    min-width: 173px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 999px;
+    border: 1.5px solid var(--primary-color-black-green);
+    background: var(--primary-color-black-green);
+    color: var(--text-color-white);
+    text-align: center;
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.page-name {
+    display: flex;
+    color: var(--primary-color-black);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.page-name::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+    background: var(--primary-color-black);
+    margin: 12px 21px 0 0;
+}
+
+.section-heading {
+    position: relative;
+    color: var(--primary-color-black);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 103px;
+    top: 83px;
+    width: 66px;
+    height: 2px;
+    background: var(--primary-color-black);
+}
+
+.control {
+    display: flex;
+    column-gap: 17px;
+}
+
+.control__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    background: var(--secondary-color-light-green);
+    color: var(--primary-color-black);
+}
+
+.control__icon:hover {
+    color: #fff;
+    background: var(--primary-color-black-green);
+}
