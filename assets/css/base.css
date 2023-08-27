@@ -118,3 +118,28 @@ button {
     color: #fff;
     background: var(--primary-color-black-green);
 }
+
+
+/* decor */
+
+.decor {
+    position: absolute;
+    z-index: 999;
+    
+}
+
+.decor__icon-flower {
+    position: relative;
+    z-index: 1;
+}
+
+.decor__icon-curve {
+    position: absolute;
+    top: -8px;
+    left: 42px;
+}
+
+.decor__rotate {
+    transform: rotate(176deg);
+    
+}
