@@ -5,6 +5,8 @@
     --primary-color-black: #152427;
     --primary-color-black-green: #143c3c;
     --secondary-color-light-green: #e2eddf;
+    --secondary-color-blue: #83A17D;
+    --secondary-color-gray: #6A8383;
     --text-color-light-gray: #7D8188;
     --text-color-white: #fff;
 }
@@ -89,10 +91,9 @@ button {
 
 .section-heading::after {
     content: "";
-    display: block;
-    position: absolute;
-    right: 103px;
-    top: 83px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 8px;
     width: 66px;
     height: 2px;
     background: var(--primary-color-black);
@@ -143,3 +144,5 @@ button {
     transform: rotate(176deg);
     
 }
+
+
